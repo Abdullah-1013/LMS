@@ -1,0 +1,53 @@
+{
+    "departments": [
+      {
+        "id": 1,
+        "name": "Computer Science",
+        "courses": [
+          {
+            "id": 1,
+            "name": "Data Structures",
+            "lectures": [
+              {
+                "id": 1,
+                "title": "Introduction to Data Structures",
+                "category": "Best",
+                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              },
+              {
+                "id": 2,
+                "title": "Arrays and Linked Lists",
+                "category": "Middle",
+                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              },
+              {
+                "id": 3,
+                "title": "Stacks and Queues",
+                "category": "Worst",
+                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Algorithms",
+            "lectures": [
+              {
+                "id": 1,
+                "title": "Sorting Algorithms",
+                "category": "Best",
+                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              },
+              {
+                "id": 2,
+                "title": "Graph Algorithms",
+                "category": "Middle",
+                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
