@@ -1,62 +1,62 @@
 import React from 'react';
-import { View, Text, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, StyleSheet, TouchableOpacity, Linking } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 
 const LectureScreen = () => {
   const route = useRoute();
   const { course } = route.params;
 
-  const categorizeLectures = (category) => {
-    return course.lectures.filter((lecture) => lecture.category === category);
-  };
-
   return (
-    <View>
-      <Text>Lectures for {course.name}</Text>
-
-      <Text>Best Lectures</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Lectures in {course.name}</Text>
       <FlatList
-        data={categorizeLectures('Best')}
+        data={course.lectures}
         renderItem={({ item }) => (
-          <View>
-            <Text>{item.title}</Text>
-            <TouchableOpacity onPress={() => Linking.openURL(item.youtubeLink)}>
-              <Text>Watch on YouTube</Text>
-            </TouchableOpacity>
-          </View>
-        )}
-        keyExtractor={(item) => item.id.toString()}
-      />
-
-      <Text>Middle Lectures</Text>
-      <FlatList
-        data={categorizeLectures('Middle')}
-        renderItem={({ item }) => (
-          <View>
-            <Text>{item.title}</Text>
-            <TouchableOpacity onPress={() => Linking.openURL(item.youtubeLink)}>
-              <Text>Watch on YouTube</Text>
-            </TouchableOpacity>
-          </View>
-        )}
-        keyExtractor={(item) => item.id.toString()}
-      />
-
-      <Text>Worst Lectures</Text>
-      <FlatList
-        data={categorizeLectures('Worst')}
-        renderItem={({ item }) => (
-          <View>
-            <Text>{item.title}</Text>
-            <TouchableOpacity onPress={() => Linking.openURL(item.youtubeLink)}>
-              <Text>Watch on YouTube</Text>
-            </TouchableOpacity>
-          </View>
+          <TouchableOpacity
+            style={styles.card}
+            onPress={() => Linking.openURL(item.youtubeLink)}
+          >
+            <Text style={styles.cardText}>{item.title}</Text>
+            <Text style={styles.category}>{item.category}</Text>
+          </TouchableOpacity>
         )}
         keyExtractor={(item) => item.id.toString()}
       />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f0f0f5',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: '#333',
+  },
+  card: {
+    backgroundColor: '#FFC107',
+    padding: 15,
+    borderRadius: 10,
+    marginVertical: 10,
+    width: '80%',
+    alignItems: 'center',
+  },
+  cardText: {
+    color: '#333',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  category: {
+    fontSize: 14,
+    color: '#555',
+  },
+});
 
 export default LectureScreen;

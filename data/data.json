@@ -1,53 +1,274 @@
 {
-    "departments": [
-      {
-        "id": 1,
-        "name": "Computer Science",
-        "courses": [
-          {
-            "id": 1,
-            "name": "Data Structures",
-            "lectures": [
-              {
-                "id": 1,
-                "title": "Introduction to Data Structures",
-                "category": "Best",
-                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              },
-              {
-                "id": 2,
-                "title": "Arrays and Linked Lists",
-                "category": "Middle",
-                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              },
-              {
-                "id": 3,
-                "title": "Stacks and Queues",
-                "category": "Worst",
-                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "name": "Algorithms",
-            "lectures": [
-              {
-                "id": 1,
-                "title": "Sorting Algorithms",
-                "category": "Best",
-                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              },
-              {
-                "id": 2,
-                "title": "Graph Algorithms",
-                "category": "Middle",
-                "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "departments": [
+    {
+      "id": 1,
+      "name": "Computer Science",
+      "courses": [
+        {
+          "id": 1,
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Introduction to Arrays",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=1aKHkjk3fp0"
+            },
+            {
+              "id": 2,
+              "title": "Binary Trees",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=7sRJWrdC21k"
+            },
+            {
+              "id": 3,
+              "title": "Sorting Algorithms",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=3rrwBwopTg8"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Algorithms",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Greedy Algorithms",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=arj719avlTo"
+            },
+            {
+              "id": 2,
+              "title": "Divide and Conquer",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=kjBaxdAj4K8"
+            },
+            {
+              "id": 3,
+              "title": "Backtracking",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=g6OxU-hRGtY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Engineering",
+      "courses": [
+        {
+          "id": 1,
+          "name": "Thermodynamics",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Introduction to Thermodynamics",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=aQ80bWv8dF4"
+            },
+            {
+              "id": 2,
+              "title": "Laws of Thermodynamics",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=fJVJiz0B8PQ"
+            },
+            {
+              "id": 3,
+              "title": "Entropy and Disorder",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=qU2ve4rQSQU"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Fluid Mechanics",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Introduction to Fluid Mechanics",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=UBUw65HAWZo"
+            },
+            {
+              "id": 2,
+              "title": "Bernoulli's Principle",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=eaEtJa1cylQ"
+            },
+            {
+              "id": 3,
+              "title": "Viscosity",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=cktfm7jicSo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Electrical Engineering",
+      "courses": [
+        {
+          "id": 1,
+          "name": "Circuit Analysis",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Ohm's Law",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=8zA1TF01JS8"
+            },
+            {
+              "id": 2,
+              "title": "Kirchhoff's Laws",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=gjG9B3cdHFs"
+            },
+            {
+              "id": 3,
+              "title": "AC Circuits",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=zOtwBAMgYHo"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Electromagnetics",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Maxwell's Equations",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=nkHkCz6RZfM"
+            },
+            {
+              "id": 2,
+              "title": "Magnetic Fields",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=3OWCnsdTnDM"
+            },
+            {
+              "id": 3,
+              "title": "Inductance",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=UO1B74YjIR4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Civil Engineering",
+      "courses": [
+        {
+          "id": 1,
+          "name": "Structural Analysis",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Stress and Strain",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=BbB58W3orxU"
+            },
+            {
+              "id": 2,
+              "title": "Beams and Loads",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=8qnsdknJYH4"
+            },
+            {
+              "id": 3,
+              "title": "Trusses",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=lT_pBo4X3RY"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Transportation Engineering",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Highway Design",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=YUFLY0E5aO4"
+            },
+            {
+              "id": 2,
+              "title": "Pavement Materials",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=lWY3WkH0CWk"
+            },
+            {
+              "id": 3,
+              "title": "Traffic Flow Theory",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=vH9jshbqST4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mathematics",
+      "courses": [
+        {
+          "id": 1,
+          "name": "Linear Algebra",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Matrix Multiplication",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=jjDqsHAJ8-Y"
+            },
+            {
+              "id": 2,
+              "title": "Vector Spaces",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=kX7kUNyD0jc"
+            },
+            {
+              "id": 3,
+              "title": "Eigenvalues",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=8GcjqOkpKO4"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Calculus",
+          "lectures": [
+            {
+              "id": 1,
+              "title": "Limits and Continuity",
+              "category": "Best",
+              "youtubeLink": "https://www.youtube.com/watch?v=uj6N1npayVo"
+            },
+            {
+              "id": 2,
+              "title": "Derivatives",
+              "category": "Middle",
+              "youtubeLink": "https://www.youtube.com/watch?v=Qk5e3_NQnuI"
+            },
+            {
+              "id": 3,
+              "title": "Integration",
+              "category": "Worst",
+              "youtubeLink": "https://www.youtube.com/watch?v=NJ15E8UHF_o"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
